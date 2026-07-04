@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emergency Medical Passport - Caleb Mutombwa</title>
+<meta name="description" content="Emergency Medical Passport for Kundai Caleb Mutombwa.">
+<style>
+:root {
+  --nhs:#005eb8;
+  --nhs-dark:#003f7d;
+  --red:#b00020;
+  --amber:#ffb81c;
+  --green:#007f3b;
+  --ink:#111827;
+  --muted:#4b5563;
+  --bg:#f3f6fb;
+  --card:#ffffff;
+  --line:#d7dde8;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.5;
+}
+header {
+  background:linear-gradient(135deg,var(--nhs),var(--nhs-dark));
+  color:#fff;
+  padding:28px 18px;
+}
+.header-inner, main {
+  max-width:1040px;
+  margin:auto;
+}
+h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3.5rem); }
+h2 { color:var(--nhs-dark); margin-top:0; }
+h3 { margin-bottom:6px; }
+.updated { opacity:.95; font-weight:bold; }
+nav {
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav .nav-inner {
+  max-width:1040px;
+  margin:auto;
+  display:flex;
+  gap:8px;
+  overflow:auto;
+  padding:10px 12px;
+}
+nav a {
+  white-space:nowrap;
+  background:#e8f1fb;
+  color:var(--nhs-dark);
+  padding:10px 12px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:bold;
+}
+main { padding:18px; }
+.card {
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  margin:16px 0;
+  box-shadow:0 4px 18px rgba(0,0,0,.06);
+}
+.critical {
+  background:var(--red);
+  color:#fff;
+  border:0;
+}
+.critical h2 { color:#fff; }
+.alert-list {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:12px;
+}
+.alert-item {
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.35);
+  padding:14px;
+  border-radius:14px;
+  font-size:1.08rem;
+  font-weight:bold;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+.button {
+  display:block;
+  text-align:center;
+  background:var(--nhs);
+  color:#fff;
+  padding:14px 16px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:1.05rem;
+  font-weight:bold;
+  margin:8px 0;
+}
+.button.green { background:var(--green); }
+.button.red { background:var(--red); }
+.tag {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:bold;
+  margin:4px 4px 4px 0;
+}
+.tag.red { background:#fde7eb; color:var(--red); }
+.tag.amber { background:#fff4cc; color:#6b4b00; }
+.tag.blue { background:#e8f1fb; color:var(--nhs-dark); }
+table {
+  width:100%;
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td {
+  border:1px solid var(--line);
+  padding:10px;
+  text-align:left;
+  vertical-align:top;
+}
+th {
+  background:#e8f1fb;
+  color:var(--nhs-dark);
+}
+.notice {
+  border-left:8px solid var(--amber);
+  background:#fff9e8;
+}
+.qr {
+  width:210px;
+  max-width:100%;
+  border:10px solid #fff;
+  border-radius:14px;
+}
+.small { color:var(--muted); font-size:.92rem; }
+footer {
+  padding:28px 18px;
+  color:#fff;
+  background:#1f2937;
+  margin-top:30px;
+}
+.print-only { display:none; }
+@media print {
+  nav, .no-print { display:none; }
+  body { background:#fff; }
+  .card { box-shadow:none; break-inside:avoid; }
+  .print-only { display:block; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>⚕ Emergency Medical Passport</h1>
+    <p><strong>Kundai Caleb Mutombwa</strong> · Preferred name: <strong>Caleb</strong></p>
+    <p>DOB: <strong>24 November 1994</strong> · Organ donor: <strong>YES</strong></p>
+    <p class="updated">Last reviewed: 04 July 2026</p>
+  </div>
+</header>
+
+<nav class="no-print">
+  <div class="nav-inner">
+    <a href="#emergency">Emergency</a>
+    <a href="#contacts">ICE Contacts</a>
+    <a href="#medication">Medication</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#surgery">Surgery</a>
+    <a href="#clinicians">Clinicians</a>
+    <a href="#communication">Communication</a>
+    <a href="#documents">Documents</a>
+  </div>
+</nav>
+
+<main>
+<section id="emergency" class="card critical">
+  <h2>🚨 Critical Emergency Alerts</h2>
+  <div class="alert-list">
+    <div class="alert-item">Taking Apixaban 5 mg twice daily</div>
+    <div class="alert-item">Blood thinner / anticoagulant</div>
+    <div class="alert-item">High bleeding risk</div>
+    <div class="alert-item">Recent Left ACL Reconstruction: 25 June 2026</div>
+    <div class="alert-item">Allergy: Fish and Seafood</div>
+    <div class="alert-item">Carries anticoagulant alert card</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>30-Second Clinical Summary</h2>
+  <p><strong>I am taking Apixaban, a blood thinner.</strong> Please consider bleeding risk before invasive procedures, injections, falls assessment or trauma management.</p>
+  <p>I have a history of <strong>Bipolar Disorder</strong> and <strong>Schizophrenia</strong>. Stressful situations, hospital admission, pain or surgery may affect my mental health. Calm explanations and involving my emergency contacts can help communication and reduce distress.</p>
+  <p><strong>Recent surgery:</strong> Left ACL Reconstruction using hamstring graft at Bath Clinic on 25 June 2026.</p>
+</section>
+
+<section id="contacts" class="card">
+  <h2>☎ Emergency Contacts</h2>
+  <div class="grid">
+    <div>
+      <h3>ICE 1: Dannie Gwenzi</h3>
+      <p>Relationship: Uncle</p>
+      <a class="button green" href="tel:+447956411689">Call +44 7956 411689</a>
+    </div>
+    <div>
+      <h3>ICE 2: Julie Sheared</h3>
+      <p>Relationship: Aunt</p>
+      <a class="button green" href="tel:+447747622362">Call +44 7747 622362</a>
+    </div>
+  </div>
+</section>
+
+<section id="medication" class="card">
+  <h2>💊 Current Medication</h2>
+  <table>
+    <tr><th>Medication</th><th>Dose</th><th>Frequency</th><th>Reason</th></tr>
+    <tr><td>Quetiapine</td><td>50 mg</td><td>Once daily</td><td>Mood stabiliser</td></tr>
+    <tr><td>Lamotrigine</td><td>200 mg</td><td>Once daily</td><td>Mood stabiliser</td></tr>
+    <tr><td><strong>Apixaban</strong></td><td><strong>5 mg</strong></td><td><strong>Twice daily</strong></td><td><strong>Blood thinner</strong></td></tr>
+    <tr><td>Hydroxocobalamin</td><td>1 ml injection</td><td>Every 60 days</td><td>B12 deficiency</td></tr>
+  </table>
+</section>
+
+<section id="conditions" class="card">
+  <h2>🩺 Medical Conditions</h2>
+  <p>
+    <span class="tag blue">Bipolar disorder</span>
+    <span class="tag blue">Schizophrenia</span>
+    <span class="tag red">Previous DVT/PE or blood clots</span>
+    <span class="tag amber">B12 deficiency</span>
+    <span class="tag amber">Recent ACL reconstruction</span>
+  </p>
+  <div class="card notice">
+    <strong>Important note:</strong> I had a bipolar episode following recent surgery. Please consider mental health impact during acute care, admission, pain, poor sleep, medication changes or further surgery.
+  </div>
+</section>
+
+<section id="allergies" class="card">
+  <h2>⚠ Allergies</h2>
+  <p><strong>Fish and Seafood</strong></p>
+</section>
+
+<section id="surgery" class="card">
+  <h2>🦵 Recent Surgery</h2>
+  <table>
+    <tr><th>Operation</th><td>Left ACL Reconstruction - Hamstring graft</td></tr>
+    <tr><th>Date</th><td>25 June 2026</td></tr>
+    <tr><th>Hospital</th><td>Bath Clinic</td></tr>
+    <tr><th>Consultant</th><td>Mr Richard Arun Kapur</td></tr>
+  </table>
+</section>
+
+<section id="clinicians" class="card">
+  <h2>🏥 GP and Consultants</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>GP</h3>
+      <p><strong>Dr C. M. Bevan</strong><br>
+      Fairfield Park Health Centre<br>
+      Tyning Lane, Bath, BA1 6EA</p>
+      <a class="button" href="tel:+441225331616">Call GP: +44 1225 331616</a>
+    </div>
+    <div class="card">
+      <h3>Orthopaedics</h3>
+      <p><strong>Mr Richard Arun Kapur</strong><br>Bath Clinic<br>ACL Reconstruction</p>
+    </div>
+    <div class="card">
+      <h3>Psychiatry</h3>
+      <p><strong>Dr Viviane Nzouonta Ngwompo</strong><br>Royal United Hospitals Bath</p>
+    </div>
+  </div>
+</section>
+
+<section id="communication" class="card">
+  <h2>🧠 Communication and Psychological Safety</h2>
+  <p>I have some PTSD. A calm familiar voice always helps. Where possible, please contact Dannie Gwenzi, Julie Sheared or Clare Van Onsleen from SABIS Iraq.</p>
+  <p>Please explain procedures clearly, tell me what is happening, and involve my emergency contacts where clinically appropriate.</p>
+  <p><strong>Preferred hospital where clinically appropriate:</strong> Bath Clinic. This is important for psychological safety.</p>
+</section>
+
+<section id="documents" class="card">
+  <h2>📄 Documents to Add Later</h2>
+  <ul>
+    <li>Anticoagulant alert card</li>
+    <li>Hospital discharge letters</li>
+    <li>Medication summary from NHS App</li>
+    <li>Clinic letters</li>
+    <li>Physiotherapy plan</li>
+    <li>MRI / X-ray reports</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>QR Code</h2>
+  <p>This QR code links to the current Medical Passport location.</p>
+  <img class="qr" src="medical-passport-qr.png" alt="QR code for emergency medical passport">
+  <p class="small">Current destination: https://sites.google.com/view/calebmutombwamedical-info/home</p>
+</section>
+
+<section class="card small">
+  <h2>Disclaimer</h2>
+  <p>This page is intended to support emergency care and communication. Healthcare professionals should verify information clinically where possible.</p>
+</section>
+</main>
+
+<footer>
+  <div class="header-inner">
+    <strong>Emergency Medical Passport</strong><br>
+    Kundai Caleb Mutombwa · Caleb
+  </div>
+</footer>
+</body>
+</html>
